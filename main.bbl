@@ -1,0 +1,131 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+
+\bibitem{Degrande:2012wf}
+C.~Degrande, N.~Greiner, W.~Kilian, O.~Mattelaer, H.~Mebane, T.~Stelzer,
+  S.~Willenbrock, and C.~Zhang, {\em {Effective Field Theory: A Modern Approach
+  to Anomalous Couplings}\/},
+  \href{http://dx.doi.org/10.1016/j.aop.2013.04.016}{Annals Phys. {\bf 335}
+  (2013)  21--32},
+\href{http://arxiv.org/abs/1205.4231}{{\tt arXiv:1205.4231 [hep-ph]}}.
+%%CITATION = ARXIV:1205.4231;%%.
+
+\bibitem{Kobach:2016ami}
+A.~Kobach, {\em {Baryon Number, Lepton Number, and Operator Dimension in the
+  Standard Model}\/},
+  \href{http://dx.doi.org/10.1016/j.physletb.2016.05.050}{Phys. Lett. {\bf
+  B758} (2016)  455--457},
+\href{http://arxiv.org/abs/1604.05726}{{\tt arXiv:1604.05726 [hep-ph]}}.
+%%CITATION = ARXIV:1604.05726;%%.
+
+\bibitem{Grzadkowski:2010es}
+B.~Grzadkowski, M.~Iskrzynski, M.~Misiak, and J.~Rosiek, {\em {Dimension-Six
+  Terms in the Standard Model Lagrangian}\/},
+  \href{http://dx.doi.org/10.1007/JHEP10(2010)085}{JHEP {\bf 10} (2010)  085},
+\href{http://arxiv.org/abs/1008.4884}{{\tt arXiv:1008.4884 [hep-ph]}}.
+%%CITATION = ARXIV:1008.4884;%%.
+
+\bibitem{Contino:2013kra}
+R.~Contino, M.~Ghezzi, C.~Grojean, M.~Muhlleitner, and M.~Spira, {\em
+  {Effective Lagrangian for a light Higgs-like scalar}\/},
+  \href{http://dx.doi.org/10.1007/JHEP07(2013)035}{JHEP {\bf 07} (2013)  035},
+\href{http://arxiv.org/abs/1303.3876}{{\tt arXiv:1303.3876 [hep-ph]}}.
+%%CITATION = ARXIV:1303.3876;%%.
+
+\bibitem{Gupta:2014rxa}
+R.~S. Gupta, A.~Pomarol, and F.~Riva, {\em {BSM Primary Effects}\/},
+  \href{http://dx.doi.org/10.1103/PhysRevD.91.035001}{Phys. Rev. {\bf D91}
+  (2015) no.~3, 035001},
+\href{http://arxiv.org/abs/1405.0181}{{\tt arXiv:1405.0181 [hep-ph]}}.
+%%CITATION = ARXIV:1405.0181;%%.
+
+\bibitem{Masso:2014xra}
+E.~Masso, {\em {An Effective Guide to Beyond the Standard Model Physics}\/},
+  \href{http://dx.doi.org/10.1007/JHEP10(2014)128}{JHEP {\bf 10} (2014)  128},
+\href{http://arxiv.org/abs/1406.6376}{{\tt arXiv:1406.6376 [hep-ph]}}.
+%%CITATION = ARXIV:1406.6376;%%.
+
+\bibitem{Falkowski:2015wza}
+A.~Falkowski, B.~Fuks, K.~Mawatari, K.~Mimasu, F.~Riva, and V.~Sanz, {\em
+  {Rosetta: an operator basis translator for Standard Model effective field
+  theory}\/},  \href{http://dx.doi.org/10.1140/epjc/s10052-015-3806-x}{Eur.
+  Phys. J. {\bf C75} (2015) no.~12, 583},
+\href{http://arxiv.org/abs/1508.05895}{{\tt arXiv:1508.05895 [hep-ph]}}.
+%%CITATION = ARXIV:1508.05895;%%.
+
+\bibitem{Aebischer:2017ugx}
+J.~Aebischer et al., {\em {WCxf: an exchange format for Wilson coefficients
+  beyond the Standard Model}\/},
+  \href{http://dx.doi.org/10.1016/j.cpc.2018.05.022}{Comput. Phys. Commun. {\bf
+  232} (2018)  71--83},
+\href{http://arxiv.org/abs/1712.05298}{{\tt arXiv:1712.05298 [hep-ph]}}.
+%%CITATION = ARXIV:1712.05298;%%.
+
+\bibitem{ATLAS:2019jst}
+{ATLAS} Collaboration, T.~A. collaboration,
+{\em {Measurements and interpretations of Higgs-boson fiducial cross sections
+  in the diphoton decay channel using 139 % fb$^{−1}$ of $pp$ collision data
+  at $\sqrt{s}$ = 13 TeV with the ATLAS detector}\/}, .
+%%CITATION = ATLAS-CONF-2019-029;%%.
+
+\bibitem{ATL-PHYS-PUB-2019-042}
+{ATLAS Collaboration} Collaboration, T.~A. collaboration, {\em {Methodology for
+  EFT interpretation of Higgs boson Simplified Template Cross-section results
+  in ATLAS}\/},  Tech. Rep. ATL-PHYS-PUB-2019-042, CERN, Geneva, Oct, 2019.
+\newblock \url{https://cds.cern.ch/record/2694284}.
+
+\bibitem{Brivio:2019irc}
+I.~Brivio et al., {\em {Computing Tools for the SMEFT}\/},  in {\em {Computing
+  Tools for the SMEFT}}, J.~Aebischer, M.~Fael, A.~Lenz, M.~Spannowsky, and
+  J.~Virto, eds.
+\newblock 2019.
+\newblock
+\href{http://arxiv.org/abs/1910.11003}{{\tt arXiv:1910.11003 [hep-ph]}}.
+\newblock
+%%CITATION = ARXIV:1910.11003;%%.
+
+\bibitem{Degrande:2011ua}
+C.~Degrande, C.~Duhr, B.~Fuks, D.~Grellscheid, O.~Mattelaer, and T.~Reiter,
+  {\em {UFO - The Universal FeynRules Output}\/},
+  \href{http://dx.doi.org/10.1016/j.cpc.2012.01.022}{Comput. Phys. Commun. {\bf
+  183} (2012)  1201--1214},
+\href{http://arxiv.org/abs/1108.2040}{{\tt arXiv:1108.2040 [hep-ph]}}.
+%%CITATION = ARXIV:1108.2040;%%.
+
+\bibitem{Badger:2016bpw}
+J.~R. Andersen et al., {\em {Les Houches 2015: Physics at TeV Colliders
+  Standard Model Working Group Report}\/},  in {\em {9th Les Houches Workshop
+  on Physics at TeV Colliders (PhysTeV 2015) Les Houches, France, June 1-19,
+  2015}}.
+\newblock 2016.
+\newblock \href{http://arxiv.org/abs/1605.04692}{{\tt arXiv:1605.04692
+  [hep-ph]}}.
+\newblock
+\url{http://lss.fnal.gov/archive/2016/conf/fermilab-conf-16-175-ppd-t.pdf}.
+\newblock
+%%CITATION = ARXIV:1605.04692;%%.
+
+\bibitem{Aaboud:2016ffv}
+{ATLAS} Collaboration, M.~Aaboud et al., {\em {Measurement of $W^{\pm}W^{\pm}$
+  vector-boson scattering and limits on anomalous quartic gauge couplings with
+  the ATLAS detector}\/},
+  \href{http://dx.doi.org/10.1103/PhysRevD.96.012007}{Phys. Rev. {\bf D96}
+  (2017)  012007},
+\href{http://arxiv.org/abs/1611.02428}{{\tt arXiv:1611.02428 [hep-ex]}}.
+%%CITATION = ARXIV:1611.02428;%%.
+
+\bibitem{'tHooft:1972fi}
+G.~'t~Hooft and M.~J.~G. Veltman, {\em {Regularization and Renormalization of
+  Gauge Fields}\/},
+\href{http://dx.doi.org/10.1016/0550-3213(72)90279-9}{Nucl. Phys. {\bf B44}
+  (1972)  189--213}.
+%%CITATION = NUPHA,B44,189;%%.
+
+\bibitem{Belanger:2014vza}
+G.~B\'elanger, F.~Boudjema, A.~Pukhov, and A.~Semenov, {\em {micrOMEGAs4.1: two
+  dark matter candidates}\/},
+  \href{http://dx.doi.org/10.1016/j.cpc.2015.03.003}{Comput. Phys. Commun. {\bf
+  192} (2015)  322--329},
+\href{http://arxiv.org/abs/1407.6129}{{\tt arXiv:1407.6129 [hep-ph]}}.
+%%CITATION = ARXIV:1407.6129;%%.
+
+\end{thebibliography}\endgroup

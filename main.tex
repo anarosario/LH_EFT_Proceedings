@@ -1,0 +1,56 @@
+% ==================================================
+% Don't change the content of this file.
+% It is needed to compile locally your contribution
+% respecting the format that will match the final report
+% Edit the files {projname.packages.tex}, {projname.authors.tex}, {projname.main.tex} and {projname.bib} following the guidelines.
+% ==================================================
+
+\documentclass[11pt]{cernyrep}
+\pdfoutput=1
+
+\usepackage{hyperref}
+\hypersetup{
+%  pdfborder={0 0 0},
+  colorlinks=true,
+  linkcolor=red,
+  urlcolor=blue,
+  citecolor=red %gray
+%  pdfauthor={LH19 participants},
+%  pdftitle={Les Houches 2019 Proceedings}
+}
+
+%\usepackage[square,elide]{natbib}
+\usepackage{cite}
+\bibliographystyle{atlasnote}
+
+\usepackage{amsmath,amssymb,graphicx,xspace,subfigure}
+\usepackage{todonotes}
+\usepackage{bigints}
+\usepackage{wrapfig}
+
+% ==================================================
+% if really needed, add further packages through the following include
+% (see the template). Only official latex packages are allowed, local
+% changes are not allowed.
+\include{higgseft.packages}
+% ==================================================
+
+\begin{document}
+\sloppy
+% ===================================================
+% authors and affiliations
+\include{higgseft.authors}
+% \maketitle
+\newpage
+
+% ===================================================
+% main text (title must be a section, authors must be added as a footnote)
+\include{higgseft.main}
+
+% ===================================================
+% add all the references in a single bib file, BibTeX format must be used,
+% no manual modifications
+\bibliography{higgseft.main}
+
+% ===================================================
+\end{document}

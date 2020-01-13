@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: atlasnote.bst
+A level-1 auxiliary file: higgseft.authors.aux
+A level-1 auxiliary file: higgseft.main.aux
+Database file #1: higgseft.main.bib
+You've used 16 entries,
+            2318 wiz_defined-function locations,
+            687 strings with 7641 characters,
+and the built_in function-call counts, 5312 in all, are:
+= -- 534
+> -- 195
+< -- 1
++ -- 71
+- -- 55
+* -- 544
+:= -- 664
+add.period$ -- 37
+call.type$ -- 16
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 271
+empty$ -- 524
+format.name$ -- 55
+if$ -- 1371
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 53
+newline$ -- 89
+num.names$ -- 18
+pop$ -- 81
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 170
+stack$ -- 0
+substring$ -- 208
+swap$ -- 109
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 35
+width$ -- 18
+write$ -- 159
