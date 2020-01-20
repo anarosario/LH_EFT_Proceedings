@@ -63,9 +63,9 @@ To overcome these concerns the \SMEFTatNLO\ tool~\cite{SMEFTNLO} can be used for
 
 \subsection{Comparison between models}
 \label{sec:higgseft:section2}
-The \SMEFTsim and \SMEFTatNLO tools have been validated against each other~\cite{Durieux:2019lnv} for the top sector. In this section we compare both models at leading order (LO) by checking the cross sections of the $pp\to ZH$ and $pp\to t\bar{t}H$ processes. The comparison is made at the cross section level and, thus, not expected to be in perfect agreement since it will be affected by phase-space integration. The main goal of this comparison is to show the mapping between the different Wilson coefficients naming and to ensure that the setup used for both models is consistent.
+The \SMEFTsim\ and \SMEFTatNLO\ tools have been validated against each other~\cite{Durieux:2019lnv} for the top sector. In this section we compare both models at leading order (LO) by checking the cross sections of the $pp\to ZH$ and $pp\to t\bar{t}H$ processes. The comparison is made at the cross section level and, thus, not expected to be in perfect agreement since it will be affected by phase-space integration. The main goal of this comparison is to show the mapping between the different Wilson coefficients naming and to ensure that the setup used for both models is consistent.
 
-For both models we use the $m_Z$, $m_W$, $G_F$ scheme of electroweak parameters\footnote{We use the \texttt{SMEFTsim\_A\_U35\_MwScheme\_UFO} model for \SMEFTsim and the \texttt{SMEFTatNLO\_U2\_2\_U3\_3\_cG\_4F\_LO\_UFO-LO} model for \SMEFTatNLO}. The latest versions of the models available in December 2020 is used.  The \Madgraph 2.6.6 generator is used to obtain the cross sections results. The definition of the processes is as follows for the SM results:
+For both models we use the $m_Z$, $m_W$, $G_F$ scheme of electroweak parameters\footnote{We use the \texttt{SMEFTsim\_A\_U35\_MwScheme\_UFO} model for \SMEFTsim\ and the \texttt{SMEFTatNLO\_U2\_2\_U3\_3\_cG\_4F\_LO\_UFO-LO} model for \SMEFTatNLO\ }. The latest versions of the models available in December 2020 is used.  The \Madgraph 2.6.6 generator is used to obtain the cross sections results. The definition of the processes is as follows for the SM results:
 
 \noindent
 {\bf ttH:}\\
@@ -81,7 +81,7 @@ For both models we use the $m_Z$, $m_W$, $G_F$ scheme of electroweak parameters\
   
   The values of several parameters like $m_W$, $mt$, $\alpha_S$ or $\Gamma H$ differ in the default settings of the models and they were set to the same values.
 
-  The tables below show the comparison between the predictions obtained for SM in both models as well as the interference terms, obtained with the NP$^{\wedge}$2$==$1 (NP$^{\wedge}$2$==$2)  for the SMEFTsim (SMEFTatNLO) model.
+  The tables below show the comparison between the predictions obtained for SM in both models as well as the interference terms, obtained with the NP$^{\wedge}$2$==$1 (NP$^{\wedge}$2$==$2)  for the \SMEFTsim\ (\SMEFTatNLO\ ) model.
 
   \begin{table}[h]
     \centering
@@ -115,7 +115,7 @@ For both models we use the $m_Z$, $m_W$, $G_F$ scheme of electroweak parameters\
       \hline
     \end{tabular}
 }    
-    \caption{ Comparison of the SM and interference predicitions for the Z($l^{+}l^{-}$)H process between the SMEFTsim and SMEFTatNLO}
+    \caption{ Comparison of the SM and interference predicitions for the Z($l^{+}l^{-}$)H process between the \SMEFTsim\ and \SMEFTatNLO\ }
 
   \end{table}
 
@@ -163,7 +163,7 @@ $(\bar q_p \sigma^{\mu\nu} T^A u_r) \widetilde H \, G_{\mu\nu}^A$ & cuGAbs-ctG &
  \hline
 \end{tabular}
 }
-\caption{ Comparison of the SM and interference predicitions for the ttH process between the SMEFTsim and SMEFTatNLO.}
+\caption{ Comparison of the SM and interference predicitions for the ttH process between the \SMEFTsim\ and \SMEFTatNLO\ .}
 \end{table}
 \end{center}
 
@@ -177,7 +177,7 @@ $$ \mathcal{O}_uB = (\bar q_p \sigma^{\mu\nu} u_r) \widetilde H \, B_{\mu\nu}; \
    \mathcal{O}_uW =  (\bar q_p \sigma^{\mu\nu} u_r) \tau^I \widetilde H \, W_{\mu\nu}^I
 $$
 
-   there is no one-to-one correspondence between the models in their latest versions. The \SMEFTatNLO version released on 2019/04/03 was used instead to compare these two operators.
+   there is no one-to-one correspondence between the models in their latest versions. The \SMEFTatNLO\ version released on 2019/04/03 was used instead to compare these two operators.
 
 \begin{center}
   \begin{table}[h]
@@ -194,19 +194,19 @@ $$
  
 \end{tabular}
     }
-    \caption{ Comparison of the SM and interference predicitions for the ttH process between the SMEFTsim and SMEFTatNLO for |cuB| (ctB) and |cuW| (ctW). The operator definition are given in the way they are implemented in \SMEFTsim.}
+    \caption{ Comparison of the SM and interference predicitions for the ttH process between the \SMEFTsim\ and \SMEFTatNLO\ for |cuB| (ctB) and |cuW| (ctW). The operator definition are given in the way they are implemented in \SMEFTsim\ .}
     \label{tab:higgseft:comptth2}
 \end{table}
 \end{center}
 
-The prediction for the operators shown in Table~\ref{tab:higgseft:comptth2} agree in their absolute value but not in their sign. The way in which they are implemented in the model is also different. While in \SMEFTsim the absolute value and the phase of these complex operators can be changed by the user, only the real part can be tuned by the user in \SMEFTatNLO.
+The prediction for the operators shown in Table~\ref{tab:higgseft:comptth2} agree in their absolute value but not in their sign. The way in which they are implemented in the model is also different. While in \SMEFTsim\ the absolute value and the phase of these complex operators can be changed by the user, only the real part can be tuned by the user in \SMEFTatNLO.
 
-Other differences come from two-fermion operators involving quarks. In \SMEFTsim the couplings of all quarks enter equally, while in \SMEFTatNLO the top vertices are parameterized separately. 
+Other differences come from two-fermion operators involving quarks. In \SMEFTsim\ the couplings of all quarks enter equally, while in \SMEFTatNLO\ the top vertices are parameterized separately. 
 
 
 \subsection{$gg\to ZH$}
 \label{sec:higgseft:ggzh}
-The study of  $gg\to Z(l^{+}l^{-}H$ was performed using the \SMEFTatNLO model. The renormalization and factorization scales were set to $M_H=125$~GeV and the PDF set NNPDF2.3 for the parametrisation of the proton structure. A more in depth study of the SMEFT effects for this process was performed in~\cite{Bylund:2016phk} using the main set of operators affecting the cross sections using merged samples of up to one additional parton. Here we have considered all the operators available at NLO in \SMEFTatNLO which provide diagrams with a non-zero interference with the SM.
+The study of  $gg\to Z(l^{+}l^{-})H$ was performed using the \SMEFTatNLO\ model. The renormalization and factorization scales were set to $M_H=125$~GeV and the PDF set NNPDF2.3 for the parametrisation of the proton structure. A more in depth study of the SMEFT effects for this process was performed in~\cite{Bylund:2016phk} using the main set of operators affecting the cross sections using merged samples of up to one additional parton. Here we have considered all the operators available at NLO in \SMEFTatNLO\ which provide diagrams with a non-zero interference with the SM.
 
 In Figure~\ref{fig:higgseft:ggzh}, differential distributions as functions of $p_{T}^{V}$ and $m_{HV}$ are shown. The BSM effects caused by cp3qi, cpu, ctG and ctp~\footnote{The definition of these operators can be seen in~\cite{SMEFTNLOdefs}} is shown.  Many other operators modify the cross section of this process but only some examples of those that distort significantly the shape of the SM prediction for  $c_i=1$ are shown.
 
@@ -247,31 +247,85 @@ In addition to differential cross sections, measurements  of the Higgs couplings
 \end{tabular}
 }
 
-\caption{Parametrization of the $gg\to ZH$ bins of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO model}
+\caption{Parametrization of the $gg\to ZH$ bins of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model}
 
 \end{table}
 
 \subsection{$gg\to H$}
 \label{sec:higgseft:section3}
-The SMEFT effects in the Higgs production through gluon-gluon fusion is examined using the \SMEFTatNLO package. As in Section~\ref{sec:higgseft:ggzh}, the 
-study of this process is already available in the literature~\cite{Deutschmann:2017qum} for a limited set of operators. In this work we have considered all operators that have a non-zero interference with the SM. Those operators were found to be: $\mathcal{O}_{\textrm pG}$, $\mathcal{O}_{\textrm tG}$, $\mathcal{O}_{\textrm tp}$, $\mathcal{O}_{\textrm dp}$, $\mathcal{O}_{\textrm pDC}$, $\mathcal{O}_{\textrm \phi l1}^{(3)}$ and $\mathcal{O}_{\textrm \phil2}^{(3)}$. The last four operators enters in the process though shifts to the inputs parameters and dot modify the shape of the SM predictions.
-
-\\
-  [\textbf SETUP, check with Simone]
-  \\
-
-  \\
-    [\textbf PLOTS]
+The SMEFT effects in the Higgs production through gluon-gluon fusion is examined using the \SMEFTatNLO\ package. As in Section~\ref{sec:higgseft:ggzh}, the 
+study of this process is already available in the literature~\cite{Deutschmann:2017qum} for a limited set of operators. In this work we have considered all operators that have a non-zero interference with the SM. Those operators were found to be:
+%$\mathcal{O}_{\textrm \phi G}$, $\mathcal{O}_{\textrm tG}$, $\mathcal{O}_{\textrm tp}$, $\mathcal{O}_{\textrm dp}$, $\mathcal{O}_{\textrm pDC}$, $\mathcal{O}_{\textrm \phi l1}^{(3)}$ and $\mathcal{O}_{\textrm \phi l2}^{(3)}$.
+The last four operators enters in the process though shifts to the inputs parameters and dot modify the shape of the SM predictions.
 
 
-    In Table~\ref{tag:higgseft:stxsggh}, we provide the parametrisation of the $gg\to H$ STXS bins in stage 1.2.
+ \textcolor{red}{ SETUP, check with Simone}
 
+
+  
+ \textcolor{red}{PLOTS}
+
+  
+
+ In Table~\ref{tab:higgseft:stxsggh}, we provide the parametrisation of the $gg\to H$ STXS bins in stage 1.2.
+
+ 
+ \textcolor{red}{ Parametrization for 0-jet and 1-jet still missing}
+ 
+\begin{table}[h!]
+ \adjustbox{max width=\textwidth}{
+  \begin{tabular}{p{0.40\textwidth} p{0.60\textwidth}}
+    \toprule
+
+
+      \hline
+      \textbf{Bin} & Parametrization \\    
+      $gg\to H$ ($\geq$ 2-jet, $m_{\textrm jj}<350$~GeV, $p_{\textrm T}^{H}<60$~GeV)&
+      1.62 ctG -0.061 c3pl1 -0.061 c3pl2 +0.126 cdp -0.031 cpDC -0.122 ctp +41 cpG \\
+      \hline
+      $gg\to H$ ($\geq$ 2-jet, $m_{\textrm jj}<350$~GeV, $60<p_{\textrm T}^{H}<120$~GeV)&
+      +1.63 ctG -0.061 c3pl1 -0.061 c3pl2 +0.120 cdp -0.031 cpDC -0.121 ctp +40.8 cpG  \\
+      \hline
+      $gg\to H$ ($\geq$ 2-jet, $m_{\textrm jj}<350$~GeV, $120<p_{\textrm T}^{H}<200$~GeV)&
+      +1.69 ctG -0.062 c3pl1 -0.062 c3pl2 +0.120 cdp -0.030 cpDC -0.122 ctp +45 cpG  \\
+      \hline
+      $gg\to H$ ($\geq$ 2-jet, $350<m_{\textrm jj}<700$~GeV, $p_{\textrm T}^{H}<200$~GeV, $p_{\textrm T}^{Hjj}<25$~GeV)&
+      +1.5 ctG -0.056 c3pl1 -0.056 c3pl2 +0.113 cdp -0.027 cpDC -0.113 ctp +42 cpG \\
+      \hline
+      $gg\to H$ ($\geq$ 2-jet, $350<m_{\textrm jj}<700$~GeV, $p_{\textrm T}^{H}<200$~GeV, $p_{\textrm T}^{Hjj}>25$~GeV)&
+      
+      +1.60 ctG -0.060 c3pl1 -0.060 c3pl2 +0.117 cdp -0.028 cpDC -0.126 ctp + 40 cpG  \\
+      \hline
+      $gg\to H$ ($\geq$ 2-jet, $m_{\textrm jj}>700$~GeV, $p_{\textrm T}^{H}<200$~GeV, $p_{\textrm T}^{Hjj}<25$~GeV)&  
+      +1.7 ctG -0.058 c3pl1 -0.058 c3pl2 +0.12 cdp -0.033 cpDC -0.12 ctp +48 cpG  \\
+      \hline
+      $gg\to H$ ($\geq$ 2-jet, $m_{\textrm jj}>700$~GeV, $p_{\textrm T}^{H}<200$~GeV, $p_{\textrm T}^{Hjj}>25$~GeV)&  
+      +1.7 ctG -0.062 c3pl1 -0.062 c3pl2 +0.114 cdp -0.031 cpDC -0.118 ctp +44 cpG \\
+      \hline
+
+       \bottomrule
+\end{tabular}
+}
+
+\caption{Parametrization of the $gg\to H$ bins of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model}
+\label{tag:higgseft:stxsggh}
+\end{table}
     
     
+The parametrization of cpG for the $gg\to H$ production mode is different in the \SMEFTsim\ and \SMEFTatNLO\ . It has been checked that for the 0-jet case the values of the inclusive cross section in those models is the same. In this case, the same SMEFT effects are observed. However, when we add jets to the final state, the parametrization changes significantly (it can be compared to the one shown in~\cite{ATL-PHYS-PUB-2019-042}). This is expected due to the different implementation of the process and different diagrams included.
 
 
+\subsection{Summary and conclusions}
+In the absence of hints for new physics in the LHC, the SMEFT approach started to be widely adopted by the experimental collaborations for the interpretation of their measurements. In order to be able to have predictions for the SMEFT, implementation of the SM plus dimension-6 Lagrangian in form of UFO files that can be interfaced with modern event generators are needed. Two different tools: \SMEFTsim\ and \SMEFTatNLO\ has been used and compare to study the $gg\to H$ and $gg\to ZH$ loop-induced processes. For the former, which is mainly meant for performing LO calculations, the $gg\to ZH$ process cannot be simulated and only one-loop functions for $gg\to H$ are implemented. It lacks, for example, of $gg\to Hg$ one loop-function exists making the calculation of Higgs plus jets unreliable. It also truncates the Lagrangian for contributions that have a loop supression on top of the $\Lambda^{-2}$.
 
+In this work we have compared both tools for the ttH and ZH production processes. The agreement between the predictions for the SM and interference terms is excellent except for the $\mathcal{O}_{\textrm tG}$ operator. Some other operators like $\mathcal{O}_{\textrm tW}$, $\mathcal{O}_{\textrm tZ}$, or two-fermion currents involving quarks cannot be directly compared. It would be helpful for the user to to have a clear mapping between each operator in both models.
 
+The SMEFT effects have been studied by means of the distortion of the SM prediction shape and normalization in differential cross sections as well as the parametrization of STXS bins. Only the interference effects have been shown. For $gg\to H$
+\textcolor{red}{Fill with conclusions of the plots}
+The parametrisation in terms of STXS bins for $\mathcal{O}_{\phi G}$ differs from others that can be found in the literature using \SMEFTsim\ due to the differences in the implementation of this process in both tools.
+For $gg\to ZH$, with $Z\to l^{+}l^{-}$,  many operators change the cross sections. However, most of them just introduce a deviation in the normalization of the SM predictions at the interference level whithout distorting the SM shape. Among the ones that have an energy dependence we can find: $\mathcal{O}_{tG}$,...
+
+The use of \SMEFTsim\ for EFT interpretations of Higgs measurements can result insatisfactory for Higgs loop-induced processes. In this cases, as we have shown, the \SMEFTatNLO\ tool can be used instead. The NLO effects on the decays have not been studied here. This work could have been extended with studies of $H\to \gamma\gamma$ and $ H\to Z\gamma$. They exist in the literature~\cite{Dawson:2018liq} for $H\to \gamma\gamma$. However, none of the tools are able to provide the NLO QED corrections for these processes in the SMEFT.
 
 
 
