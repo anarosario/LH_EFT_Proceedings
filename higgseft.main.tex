@@ -243,7 +243,7 @@ $$
         \hline                                                                                                                                              
         $i(\bar Q \sigma^{\mu\nu} t) \tilde \phi  B_{\mu\nu} + h.c.$ & \ctB\ (\cuBAbs) & -0.000828$\pm$ 0.000002 &-0.00085$\pm$ 0.00001 \\
          \hline
-        $i(\bar{Q} \tau^{\mu\nu}\tau_{I} t)  \tilde{\phi} \, W_{\mu\nu}^I$ & \ctW (\cuWAbs) & -0.002219$\pm$ 0.000006& 0.00223$\pm$ 0.00002\\
+        $i(\bar{Q} \tau^{\mu\nu}\tau_{I} t)  \tilde{\phi} \, W_{\mu\nu}^I +h.c$ & \ctW (\cuWAbs) & -0.002219$\pm$ 0.000006& 0.00223$\pm$ 0.00002\\
         \hline
  
 \end{tabular}
@@ -262,13 +262,13 @@ Other differences come from two-fermion operators involving quarks. In \SMEFTsim
 \label{sec:higgseft:ggzh}
 The study of  $gg\to Z(l^{+}l^{-})H$ was performed using the \SMEFTatNLO\ model. The renormalization and factorization scales were set to $M_H=125$~GeV and the PDF set NNPDF2.3 for the parametrisation of the proton structure. The generated events were passed through the \Pythia\ parton shower. A more in depth study of the SMEFT effects for this process was performed in~\cite{Bylund:2016phk} using the main set of operators affecting the cross sections using merged samples of up to one additional parton. Here we have considered all the operators available at NLO in \SMEFTatNLO\ which provide diagrams with a non-zero interference with the SM.
 
-In Figure~\ref{fig:higgseft:ggzh}, differential distributions as functions of $p_{T}^{V}$ and $m_{HV}$ are shown. The BSM effects caused by cp3qi, cpu, ctG and ctp~\footnote{The definition of these operators can be seen in~\cite{SMEFTNLOdefs}} is shown.  Many other operators modify the cross section of this process but only some examples of those that distort significantly the shape of the SM prediction for  $c_i=1$ are shown.
+In Figure~\ref{fig:higgseft:ggzh}, differential distributions as functions of $p_{T}^{V}$ and $m_{HV}$ are shown. The BSM effects caused by \cpqi\ , \cpu\ , \ctG\ and \ctp\ is shown.  Many other operators modify the cross section of this process but only some examples of those that distort significantly the shape of the SM prediction for  $c_i=1$ are shown.
 
 \begin{figure}
 \includegraphics[width=0.49\linewidth,page=7]{figures/kinematics_ggHll_np0.pdf}
 \includegraphics[width=0.49\linewidth,page=10]{figures/kinematics_ggHll_np0.pdf}
 \label{fig:higgseft:ggzh}
-\caption{Differential distributions as a function of $p_{T}^{V}$ and $m_{HV}$ for the SM predictions and its interference with operators with Wilson coefficients ctG, cpd, cpu and ctp  at the lowest order in QCD. The value of $\Lambda$ was set to 1 TeV}  
+\caption{Differential distributions as a function of $p_{T}^{V}$ and $m_{HV}$ for the SM predictions and its interference with operators with Wilson coefficients \ctG\ , \cpd\ , \cpu\ and \ctp\  at the lowest order in QCD. The value of $\Lambda$ was set to 1 TeV}  
 \end{figure}
 
 In addition to differential cross sections, measurements  of the Higgs couplings in terms of Simplified Template Cross Sections (STXS)~\cite{deFlorian:2016spz} also provide constraining power of the SMEFT parameters. A parametrisation in bins of the STXS in stage 1.2~\cite{Berger:2019wnu}  for $gg\to Z(l^{+}l^{-})H$  is provided in Table~\ref{tab:higgseft:stxsggzh}.
@@ -309,7 +309,7 @@ In addition to differential cross sections, measurements  of the Higgs couplings
 \label{sec:higgseft:section3}
 The SMEFT effects in the Higgs production through gluon-gluon fusion is examined using the \SMEFTatNLO\ package. As in Section~\ref{sec:higgseft:ggzh}, the 
 study of this process is already available in the literature~\cite{Deutschmann:2017qum} for a limited set of operators. In this work we have considered all operators that have a non-zero interference with the SM. Those operators were found to be:
-%$\mathcal{O}_{\textrm \phi G}$, $\mathcal{O}_{\textrm tG}$, $\mathcal{O}_{\textrm tp}$, $\mathcal{O}_{\textrm dp}$, $\mathcal{O}_{\textrm pDC}$, $\mathcal{O}_{\textrm \phi l1}^{(3)}$ and $\mathcal{O}_{\textrm \phi l2}^{(3)}$.
+$\mathcal{O}_{\phi G}$, $\mathcal{O}_{tG}$, $\mathcal{O}_{t\phi}$, $\mathcal{O}_{d\phi}$, $\mathcal{O}_{\phi DC}$, $\mathcal{O}_{\phi l1}^{(3)}$ and $\mathcal{O}_{ \phi l2}^{(3)}$.
 The last four operators enters in the process though shifts to the inputs parameters and dot modify the shape of the SM predictions.
 
 
@@ -321,10 +321,9 @@ The last four operators enters in the process though shifts to the inputs parame
 
   
 
- In Table~\ref{tab:higgseft:stxsggh}, we provide the parametrisation of the $gg\to H$ STXS bins in stage 1.2.
+ In Table~\ref{tab:higgseft:stxsggh1}, we provide the parametrisation of the $gg\to H$ STXS bins in stage 1.2.
 
  
- \textcolor{red}{ Parametrization for 0-jet and 1-jet still missing}
  
 \begin{table}[h!]
  \adjustbox{max width=\textwidth}{
@@ -333,7 +332,55 @@ The last four operators enters in the process though shifts to the inputs parame
 
 
       \hline
-      \textbf{Bin} & Parametrization \\    
+      \textbf{Bin} & Parametrization \\      
+      $gg\to H$ ($200<p_{\textrm T}^{H}<300$~GeV)&
+      1.7 \ctG -0.06 \ctpl1 -0.06 \ctpl2 +0.12 \cdp -0.03 \cpDC -0.12 \ctp +45 \cpG \\
+      \hline
+      $gg\to H$ ($300<p_{\textrm T}^{H}<450$~GeV)&
+      1.9 \ctG -0.06 \ctpl1 -0.06 \ctpl2 +0.12 \cdp -0.03 \cpDC -0.12 \ctp +50 \cpG \\
+      \hline
+      $gg\to H$ ($450<p_{\textrm T}^{H}<650$~GeV)&
+      2.5 \ctG -0.06 \ctpl1 -0.06 \ctpl2 +0.12 \cdp -0.025 \cpDC -0.11 \ctp +65 \cpG \\
+      \hline
+      $gg\to H$ ($p_{\textrm T}^{H}>650$~GeV)&
+      4 \ctG -0.07 \ctpl1 -0.07 \ctpl2 +0.12 \cdp -0.025 \cpDC -0.12 \ctp +90 \cpG \\
+      \hline      
+      $gg\to H$ (0-jet, $p_{\textrm T}^{H}<10$~GeV)&
+      1.57 \ctG -0.060 \ctpl1 -0.060 \ctpl2 +0.121 \cdp -0.030 \cpDC -0.122 \ctp +38 \cpG \\
+      \hline
+      $gg\to H$ (0-jet, $p_{\textrm T}^{H}>10$~GeV)&
+      1.58 \ctG -0.060 \ctpl1 -0.060 \ctpl2 +0.121 \cdp -0.030 \cpDC -0.121 \ctp +38 \cpG \\
+      \hline
+      $gg\to H$ (1-jet,$p_{\textrm T}^{H}<60$~GeV)&
+      1.59 \ctG -0.060 \ctpl1 -0.060 \ctpl2 +0.121 \cdp -0.030 \cpDC -0.121 \ctp +39.3 \cpG \\
+      \hline
+      $gg\to H$ (1-jet,$60<p_{\textrm T}^{H}<120$~GeV)&
+      1.60 \ctG -0.060 \ctpl1 -0.060 \ctpl2 +0.121 \cdp -0.030 \cpDC -0.121 \ctp +40.6 \cpG \\
+      \hline
+      $gg\to H$ (1-jet,$120<p_{\textrm T}^{H}<200$~GeV)&
+      1.64 \ctG -0.063 \ctpl1 -0.063 \ctpl2 +0.126 \cdp -0.031 \cpDC -0.124 \ctp +43.6 \cpG \\
+      \hline
+      
+       \bottomrule
+\end{tabular}
+}
+
+\caption{Parametrization of the $gg\to H$ bins with no jet, 0-jet and 1-jet selection of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model. The numbers are rounded according to their statistical uncertainty.}
+\label{tag:higgseft:stxsggh1}
+\end{table}
+
+
+
+
+\begin{table}[h!]
+ \adjustbox{max width=\textwidth}{
+  \begin{tabular}{p{0.40\textwidth} p{0.60\textwidth}}
+    \toprule
+
+
+      \hline
+      \textbf{Bin} & Parametrization \\
+      \hline
       $gg\to H$ ($\geq$ 2-jet, $m_{\textrm jj}<350$~GeV, $p_{\textrm T}^{H}<60$~GeV)&
       1.62 \ctG -0.061 \ctpl1 -0.061 \ctpl2 +0.126 \cdp -0.031 \cpDC -0.122 \ctp +41 \cpG \\
       \hline
@@ -361,12 +408,13 @@ The last four operators enters in the process though shifts to the inputs parame
 \end{tabular}
 }
 
-\caption{Parametrization of the $gg\to H$ bins of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model. The numbers are rounded according to their statistical uncertainty.}
-\label{tag:higgseft:stxsggh}
+\caption{Parametrization of the $gg\to H$ bins with 2 or more jets selection  of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model. The numbers are rounded according to their statistical uncertainty.}
+\label{tag:higgseft:stxsggh2}
 \end{table}
+
     
     
-The parametrization of \cpG\ for the $gg\to H$ production mode is different in the \SMEFTsim\ and \SMEFTatNLO\ . It has been checked that for the 0-jet case the values of the inclusive cross section in those models is the same. In this case, the same SMEFT effects are observed. However, when we add jets to the final state, the parametrization changes significantly (it can be compared to the one shown in~\cite{ATL-PHYS-PUB-2019-042}). This is expected due to the different implementation of the process and different diagrams included. In Figure~\ref{fig:higgseft:diagram} is depicted an example diagram which is included in \SMEFTatNLO\ and not considered in \SMEFTsim.
+The parametrization of \cpG\ for the $gg\to H$ production mode is different in the \SMEFTsim\ and \SMEFTatNLO\ for 1-jet and 2-jet . It has been checked that for the 0-jet case the values of the inclusive cross section in those models is the same. In this case, the same SMEFT effects are observed. However, when we add jets to the final state, the parametrization changes significantly (it can be compared to the one shown in~\cite{ATL-PHYS-PUB-2019-042}). This is expected due to the different implementation of the process and different diagrams included. In Figure~\ref{fig:higgseft:diagram} is depicted an example diagram which is included in \SMEFTatNLO\ and not considered in \SMEFTsim.
 
 \begin{figure}
   \centering
