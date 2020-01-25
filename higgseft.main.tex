@@ -122,9 +122,9 @@ To overcome these concerns the \SMEFTatNLO\ tool~\cite{SMEFTNLO} can be used for
 
 \subsection{Comparison between models}
 \label{sec:higgseft:section2}
-The \SMEFTsim\ and \SMEFTatNLO\ tools have been validated against each other~\cite{Durieux:2019lnv} for the top sector. In this section we compare both models at leading order (LO) by checking the cross sections of the $pp\to ZH$ and $pp\to t\bar{t}H$ processes. The comparison is made at the cross section level and, thus, not expected to be in perfect agreement since it will be affected by phase-space integration. The main goal of this comparison is to show the mapping between the different Wilson coefficients naming and to ensure that the setup used for both models is consistent.
+The \SMEFTsim\ and \SMEFTatNLO\ tools have been validated against each other~\cite{Durieux:2019lnv} for the top sector. In this section, we compare both models at leading order (LO) by checking the cross sections of the $pp\to ZH$ and $pp\to t\bar{t}H$ processes. The comparison is made at the cross section level and, thus, not expected to be in perfect agreement since it will be affected by phase-space integration. The main goal of this comparison is to show the mapping between the different Wilson coefficients naming and to ensure that the setup used for both models is consistent.
 
-For both models we use the $m_Z$, $m_W$, $G_F$ scheme of electroweak parameters\footnote{We use the \texttt{SMEFTsim\_A\_U35\_MwScheme\_UFO} model for \SMEFTsim\ and the \texttt{SMEFTatNLO\_U2\_2\_U3\_3\_cG\_4F\_LO\_UFO-LO} model for \SMEFTatNLO\ }. The latest versions of the models available in December 2019 is used.  The \Madgraph 2.6.6 generator is used to obtain the cross sections results. The definition of the ZH and ttH processes is as follows for the SM results:
+For both models we use the $m_Z$, $m_W$, $G_F$ scheme of electroweak parameters\footnote{We use the \texttt{SMEFTsim\_A\_U35\_MwScheme\_UFO} model for \SMEFTsim\ and the \texttt{SMEFTatNLO\_U2\_2\_U3\_3\_cG\_4F\_LO\_UFO-LO} model for \SMEFTatNLO\ }. The latest versions of the models available in December 2019 are used.  The \Madgraph 2.6.6 generator is used to obtain the cross sections results. The definition of the ZH and ttH processes is as follows for the SM predictions:
 
 \noindent
   \texttt{ define p = p b b$\sim$ }\\
@@ -132,7 +132,7 @@ For both models we use the $m_Z$, $m_W$, $G_F$ scheme of electroweak parameters\
 and \\ 
   \texttt{ generate p p $>$ h l+ l- SMHLOOP=0  NP=0     }.\\
   
-  The values of several parameters like $m_W$, $mt$, $\alpha_S$ or $\Gamma H$ differ in the default settings of the models and they were set to the same values.
+  The values of several parameters like $m_W$, $mt$, $\alpha_S$ or $\Gamma_{H}$ differ in the default settings of the models and they were set to the same values.
 
   The tables below show the comparison between the predictions obtained for SM in both models as well as the interference terms, obtained with the NP$^{\wedge}$2$==$1 (NP$^{\wedge}$2$==$2)  for the \SMEFTsim\ (\SMEFTatNLO\ ) model.
 
@@ -218,12 +218,12 @@ and \\
 \end{table}
 
 
-In the tables and throughout this note, the same definitions of operators and fields as provided in~\cite{SMEFTNLOdefs} are used. $gs$ is the strong coupling constant and $v$ denotes the vacuum expectiation value of the Higgs field $\phi$. $Q$ is the third generation left-handed quark $SU(2)$-doublet, $t$ is right handed $SU(2)$-singlet top quark. $G_{\mu\nu}^{A}$, $B_{\mu\nu}$, $W^{I}_{\mu\nu}$ are the fields strength tensors. Finally $T^{A}$ is the generator of the fundamental representation of $SU(3)$ and $\tau^{\mu\nu}=\frac{1}{2}[\gamma^{\mu},\gamma^{\nu}]$  with $\gamma^{\mu}$ the Dirac gamma matrices.
+In the tables and throughout this note, the same definitions of operators and fields as provided in~\cite{SMEFTNLOdefs} are used. In this notation, $gs$ is the strong coupling constant and $v$ denotes the vacuum expectiation value of the Higgs field $\phi$. $Q$ is the third generation left-handed quark $SU(2)$-doublet, $t$ is right handed $SU(2)$-singlet top quark. $G_{\mu\nu}^{A}$, $B_{\mu\nu}$, $W^{I}_{\mu\nu}$ are the fields strength tensors. Finally, $T^{A}$ is the generator of the fundamental representation of $SU(3)$ and $\tau^{\mu\nu}=\frac{1}{2}[\gamma^{\mu},\gamma^{\nu}]$  with $\gamma^{\mu}$ the Dirac gamma matrices.
 
 
 %(In SMEFTsim notation)In the tables, $H$ is the SU$_{\textrm L}$(2) scalar doublet. The gauge covariant derivative is defined as  $D_\mu = \partial_\mu + i g_3 T^A A^A_\mu + i g_2  t^I W^I_\mu + i g_1 y B_\mu$, where $T^A$ are the $\rm SU_c(3)$ generators, $t^I=\tau^I/2$ are the $\rm SU_L(2)$ generators, and $y$ is the $\rm U_Y(1)$ hypercharge. The fields $\{q,l \}$ are left handed and the fields $\{e,u,d\}$ are right handed. The definition $\sigma_{\mu \, \nu} = i \, [\gamma_\mu,\gamma_\nu]/2$ is used. The subscripts $p,r,s$ and $t$ are flavour indices.
 
-For the ttH production mode differences are observed for the ctG operator. These differences are acknowledged by the authors of the models and reside in the absence of five-point interactions and higher in the \SMEFTsim model. It will be corrected in future versions of the model.
+For the ttH production mode differences are observed for the \ctG\ operator. These differences are acknowledged by the authors of the models and reside in the absence of five-point interactions and higher in the \SMEFTsim\ model. It will be corrected in future versions of the model.
 
 For the $\mathcal{O}_{uW}$ and $\mathcal{O}_{uB}$ operators defined as,
 
@@ -234,7 +234,7 @@ $$
    there is no one-to-one correspondence between the models in their latest versions. The \SMEFTatNLO\ version released on 2019/04/03 was used instead to compare these two operators.
 
 \begin{center}
-  \begin{table}[h]
+  \begin{table}[h!]
     \resizebox{\columnwidth}{!}{%  
       \begin{tabular}{|l|l|c|c|}
         \hline
@@ -260,9 +260,9 @@ Other differences come from two-fermion operators involving quarks. In \SMEFTsim
 
 \subsection{$gg\to Z(l^{+}l^{-})H$}
 \label{sec:higgseft:ggzh}
-The study of  $gg\to Z(l^{+}l^{-})H$ was performed using the \SMEFTatNLO\ model. The renormalization and factorization scales were set to $M_H=125$~GeV and the PDF set NNPDF2.3 for the parametrisation of the proton structure. The generated events were passed through the \Pythia\ parton shower. A more in depth study of the SMEFT effects for this process was performed in~\cite{Bylund:2016phk} using the main set of operators affecting the cross sections using merged samples of up to one additional parton. Here we have considered all the operators available at NLO in \SMEFTatNLO\ which provide diagrams with a non-zero interference with the SM.
+The study of  $gg\to Z(l^{+}l^{-})H$ is performed using the \SMEFTatNLO\ model. The renormalization and factorization scales are set to $M_H=125$~GeV and the PDF set NNPDF2.3 for the parametrisation of the proton structure is used. The generated events are passed through the \Pythia\ parton shower. A more in depth study of the SMEFT effects for this process was performed in~\cite{Bylund:2016phk} using the main set of operators affecting the cross sections using merged samples of up to one additional parton. Here we have considered all the operators available at NLO in \SMEFTatNLO\ which provide diagrams with a non-zero interference with the SM.
 
-In Figure~\ref{fig:higgseft:ggzh}, differential distributions as functions of $p_{T}^{V}$ and $m_{HV}$ are shown. The BSM effects caused by \cpqi\ , \cpu\ , \ctG\ and \ctp\ is shown.  Many other operators modify the cross section of this process but only some examples of those that distort significantly the shape of the SM prediction for  $c_i=1$ are shown.
+In Figure~\ref{fig:higgseft:ggzh}, differential distributions as functions of $p_{T}^{V}$ and $m_{HV}$  with BSM effects caused by \cpqi\ , \cpu\ , \ctG\ and \ctp\ are shown.  Many other operators modify the cross section of this process but only some examples of those that distort significantly the shape of the SM prediction for  $c_i=1$ are shown.
 
 \begin{figure}
 \includegraphics[width=0.49\linewidth,page=7]{figures/kinematics_ggHll_np0.pdf}
