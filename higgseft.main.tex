@@ -88,33 +88,33 @@
 %= content ===== ========================================
 \subsection{Introduction}
 \label{sec:higgseft:section1}
-The Standard Model Effective Field Theory (SMEFT) approach is a powerful tool to look for hints of new physics. It allows to study large sets of experimental data without assuming that the theory used is valid to arbitrary high energies. In the SMEFT, the Standard Model (SM) as we know it is just an effective theory at energies around the electroweak scale. Beyond the Standard Model (BSM) physics manifests at higher scales, $\Lambda$, and is parameterised in terms of higher-dimensional operators that conserve the same fields and symmetries as the SM. At any mass dimension, a complete bases of non-redundant operators can be worked out and the full Lagrangian can be written as a power expansion
+The Standard Model Effective Field Theory (SMEFT) approach is a powerful framework to look for hints of new physics. It allows to study large sets of experimental data without assuming that the theory used is valid to arbitrary high energies. In the SMEFT, the Standard Model (SM) as we know it is just an effective theory at energies around the electroweak scale. Beyond the Standard Model (BSM) physics manifests at higher scales, $\Lambda$, and is parameterised in terms of higher-dimensional operators that conserve the same fields and symmetries as the SM. At any mass dimension, a complete bases of non-redundant operators can be worked out and the full Lagrangian can be written as a power expansion
 \begin{equation}
-\mathcal{L}_{\textrm SMEFT} = \mathcal{L}_{\textrm SM} + \sum_{d>4}\sum_{i}\frac{c_i}{\Lambda^{d-4}}\mathcal{O}_{i}^{(d)},
+\mathcal{L}_{\textrm SMEFT} = \mathcal{L}_{\textrm SM} + \sum_{d>4}\sum_{i}\frac{c_i}{\Lambda^{d-4}}\mathcal{O}_{i}^{d},
 \end{equation}  
 
-where $\mathcal{L}_{\textrm SM}$ is the SM Lagrangian, $c_i$ are the Wilson coefficients and ${\mathcal{O}^{d}}$ the set of independent operators for dimension $d$. Operators with $d=5,7$  violate lepton and/or baryon number conservation~\cite{Degrande:2012wf,Kobach:2016ami}. Thus, dimension-6 operators represent the leading deviation from the SM and will be the focus of this work. The modification of a cross section by the insertion of one dimension-6 operator in the amplitudes can be written as
+where $\mathcal{L}_{\textrm SM}$ is the SM Lagrangian, $c_i$ are the Wilson coefficients and ${\mathcal{O}^{d}_i}$ the set of independent operators for dimension $d$. Operators with $d=5,7$  violate lepton and/or baryon number conservation~\cite{Degrande:2012wf,Kobach:2016ami}. Thus, dimension-6 operators represent the leading deviation from the SM and will be the focus of this work. The modification of a given cross section by the insertion of one dimension-6 operator in the amplitudes can be written as
 
 \begin{equation}
 \sigma = \sigma_{\textrm SM} + \sum_{i}\sigma_i^{\textrm int} \frac{c_i}{\Lambda^{2}} + \sum_{i,j}\sigma_{(i,j)}^{\textrm BSM} \frac{c_ic_j}{\Lambda^{4}},
 \end{equation}  
 
-where $\sigma_{\textrm SM}$ is the SM cross section of a given process, $\sigma_i^{\textrm int}$ is the interference between the SM and BSM amplitudes and $\sigma_{(i,j)}^{\textrm BSM}$ represents the pure BSM correction to the SM cross section. The leading term is formally $\sigma_i^{\textrm int}$ and the one that will be investigated in this work. 
+where $\sigma_{\textrm SM}$ is the SM cross section of a given process, $\sigma_i^{\textrm int}$ is the interference between the SM and BSM amplitudes and $\sigma_{(i,j)}^{\textrm BSM}$ represents the pure BSM correction to the SM cross section. The leading term $\sigma_i^{\textrm int}$ is only suppressed by $\Lambda^{-2}$ and the one that will be investigated in this work. 
 
-Several bases of independent operators can be found in the literature~\cite{Grzadkowski:2010es,Contino:2013kra,Gupta:2014rxa,Masso:2014xra}. In the context of the study of the Higgs boson, the SILH basis~\cite{Contino:2013kra} has been commonly used. However, it is not optimised for, for example, diboson processes. Even if the translation between bases is known and has been automated~\cite{Falkowski:2015wza,Aebischer:2017ugx}, experimental collaboration have started to publish their EFT interpretations in the Warsaw basis also in the Higgs sector~\cite{ATLAS:2019jst,ATL-PHYS-PUB-2019-042} to facilitate future global fits of electroweak, Higgs and top data.
+Several bases of independent operators can be found in the literature~\cite{Grzadkowski:2010es,Contino:2013kra,Gupta:2014rxa,Masso:2014xra}. In the context of the study of the Higgs boson, the SILH basis~\cite{Contino:2013kra} has been commonly used. However, it is not optimised, for example, for diboson processes. Even if the translation between bases is known and has been automated~\cite{Falkowski:2015wza,Aebischer:2017ugx}, experimental collaboration have started to publish their EFT interpretations in the Warsaw basis also in the Higgs sector~\cite{ATLAS:2019jst,ATL-PHYS-PUB-2019-042} to facilitate future global fits of electroweak, Higgs and top data.
 
-The procedure to test the EFT effects for a given set of measurements can be tedious in practice and a big effort has been devoted to develop public code to perform this task in a automatic and generic way~\cite{Brivio:2019irc}. For the Warsaw basis, different Universal FeynRules Output (UFO)~\cite{Degrande:2011ua} models are available which can be interfaced with modern event generators.
+The procedure to test the EFT effects for a given set of measurements can be tedious in practice and a big effort has been devoted to developing public code to perform this task in an automatic and generic way~\cite{Brivio:2019irc}. For the Warsaw basis, different Universal FeynRules Output (UFO)~\cite{Degrande:2011ua} models are available which can be interfaced with modern event generators.
 
-The \SMEFTsim\ code~\cite{Brivio:2017btx} is a well documented UFO implementation of the full set of dimension-6 operators in the Warsaw basis. Its main scope is the estimation of the leading SMEFT corrections to the SM. The effective Lagrangian is truncated at $\Lambda^{-2}$ and not supported for next-to-leading-order (NLO) simulations. For Higgs data interpretation the model have become of common use due to its completeness~\cite{Ellis:2018gqa,Falkowski:2019hvp,ATLAS:2019jst}.  To reproduce all the main Higgs production and decay channels in the SM, the loop-induced processes ($hgg$, $h\gamma\gamma$,$hZ\gamma$) are included as effective vertices. However, it is not meant for precise studies of the EFT effects in the Higgs plus jet production for the following reasons:
+The \SMEFTsim\ code~\cite{Brivio:2017btx} is a well documented UFO implementation of the full set of dimension-6 operators in the Warsaw basis. Its main scope is the estimation of the leading SMEFT corrections to the SM. The effective Lagrangian is strictly truncated at $\Lambda^{-2}$ and neither supports next-to-leading order (NLO) simulations nor loop induced processes apart from a few exceptions. For Higgs data interpretation this model has become of common use due to its completeness~\cite{Ellis:2018gqa,Falkowski:2019hvp,ATLAS:2019jst}.  To reproduce all the main Higgs production and decay channels in the SM, the loop-induced processes ($hgg$, $h\gamma\gamma$,$hZ\gamma$) are included as effective vertices. However, it is not meant for precise studies of the EFT effects in the Higgs plus jet production for the following reasons:
 
 \begin{itemize}
-\item Only operators with the same point-like structure as the effective vertices included to reproduce loop-induced processes can modify the cross sections of these processes. That means that, for example, a modification of the top Yukawa will not affect the gluon-gluon fusion Higgs production process.
-\item Given the truncation of the Lagrangian, operators that enter though the shifts of input parameters or field redefinitions and that will modify the cross section of any tree-level process does not modify the cross section of loop-induced processes.
-\item A reliable computation of the Higgs plus jet  production in gluon-gluon fusion requires top quark loop amplitudes at high $p_{\textrm T}$ and the implementation of $gggH$ vertices which are missed in \SMEFTsim\ .
+\item Only operators with the same point-like structure as the effective vertices, included to reproduce loop-induced processes, can modify the cross sections of these processes. That means that, for example, a modification of the top Yukawa will not affect the gluon-gluon fusion Higgs production process.
+\item Given the truncation of the Lagrangian, operators that enter though the shifts of input parameters or field redefinitions, and that will modify the cross section of any tree-level process, do not modify the cross section of loop-induced processes.
+\item A reliable computation of the Higgs plus jet  production in gluon-gluon fusion requires top quark loop amplitudes at high $p_{\textrm T}$ and the implementation of $gggH$ vertices which are not included in \SMEFTsim\ .
 \item The $gg\to ZH$ process cannot be simulated.
 \end{itemize}
 
-Instead, the \SMEFTatNLO\ tool~\cite{SMEFTNLO} can be used for the loop induced Higgs processes. The tool includes a complete implementation of the SMEFT compatible with NLO QCD predictions. In this work, we study the $gg\to ZH$ and $gg\to H$ processes using \SMEFTatNLO. 
+All these point go beyond \SMEFTsim\ scope. But, instead, the \SMEFTatNLO\ tool~\cite{SMEFTNLO} can be used for the loop induced Higgs processes. The tool includes a complete implementation of the SMEFT compatible with NLO QCD predictions. After comparing the predictions of \SMEFTsim\ and \SMEFTatNLO\ on $pp\to ZH$ and $pp\to t\bar{t}H$, we study the $gg\to ZH$ and $gg\to H$ processes using \SMEFTatNLO. 
 
 
 \subsection{Comparison between models}
@@ -129,9 +129,15 @@ For both models we use the $m_Z$, $m_W$, $G_F$ scheme of electroweak parameters\
 and \\ 
   \texttt{ generate p p $>$ h l+ l- SMHLOOP=0  NP=0     }.\\
 
-  The $\texttt{SMHLOOP}$ coupling setting is not needed for \SMEFTatNLO\ . The default values of several parameters like $m_W$, $mt$, $\alpha_S$ or $\Gamma_{H}$ are different between the models and they were set to the same values.
+  The $\texttt{SMHLOOP}$ coupling setting is not needed for \SMEFTatNLO\ . The default values of several parameters like $m_W$, $mt$, $\alpha_S$ or $\Gamma_{H}$ are different between the models and they were set to the same values, namely:
+  $m_W = 79.8244$~GeV (default value in \SMEFTatNLO), 
+  $m_t = 172$~GeV (default value in \SMEFTatNLO),
+  $\alpha_S = 0.1184$ (default value in \SMEFTatNLO) and 
+  $\Gamma_{H} = 4.07$~MeV (default value in \SMEFTsim). 
 
-  The tables below show the comparison between the predictions obtained for SM in both models as well as the interference terms, obtained with the NP$^{\wedge}$2$==$1 (NP$^{\wedge}$2$==$2)  for the \SMEFTsim\ (\SMEFTatNLO) model.
+  Throughout this note, the same definitions of operators and fields as provided in~\cite{SMEFTNLOdefs} are used. In this notation, $gs$ is the strong coupling constant and $v$ denotes the vacuum expectation value of the Higgs field $\psi$. $Q$ is the third generation left-handed quark $SU(2)$-doublet, $t$ is right-handed $SU(2)$-singlet top quark. $G_{\mu\nu}^{A}$, $B_{\mu\nu}$, $W^{I}_{\mu\nu}$ are the fields strength tensors. Finally, $T^{A}$ is the generator of the fundamental representation of $SU(3)$ and $\tau^{\mu\nu}=\frac{1}{2}[\gamma^{\mu},\gamma^{\nu}]$  with $\gamma^{\mu}$ being the Dirac gamma matrices.
+
+  The Tables~\ref{tab:higgseft:zhcompa} and \ref{tab:higgseft:tthcompa} show the comparison between the predictions obtained for SM in both models as well as the interference terms, obtained with the NP$^{\wedge}$2$==$1 (NP$^{\wedge}$2$==$2)  for the \SMEFTsim\ (\SMEFTatNLO) model, for the $pp\to Z(l^{+}l^{-})H$  and $pp\to t\bar{t}H$ processes respectively. The correspondence between the nomenclature of the Wilson coefficients, or combination of them, in the different models used for the comparison can be found in the ``W. coefficient'' columns of Tables~\ref{tab:higgseft:zhcompa} and \ref{tab:higgseft:tthcompa}. All the predictions agree within the statistical uncertainty for $pp\to Z(l^{+}l^{-})H$, but for  $pp\to t\bar{t}H$ a difference of a 20\% between the values is observed for the absolute value of \ctG. These differences are acknowledged by the authors of the models and reside in the absence of five-point interactions and higher in the \SMEFTsim\ model, which go beyond the LO truncation. They will be added in future versions of the model.
 
   \begin{table}[h!]
     \centering
@@ -215,12 +221,12 @@ and \\
 \end{table}
 
 
-In the tables and throughout this note, the same definitions of operators and fields as provided in~\cite{SMEFTNLOdefs} are used. In this notation, $gs$ is the strong coupling constant and $v$ denotes the vacuum expectation value of the Higgs field $\psi$. $Q$ is the third generation left-handed quark $SU(2)$-doublet, $t$ is right handed $SU(2)$-singlet top quark. $G_{\mu\nu}^{A}$, $B_{\mu\nu}$, $W^{I}_{\mu\nu}$ are the fields strength tensors. Finally, $T^{A}$ is the generator of the fundamental representation of $SU(3)$ and $\tau^{\mu\nu}=\frac{1}{2}[\gamma^{\mu},\gamma^{\nu}]$  with $\gamma^{\mu}$ being the Dirac gamma matrices.
+
 
 
 %(In SMEFTsim notation)In the tables, $H$ is the SU$_{\textrm L}$(2) scalar doublet. The gauge covariant derivative is defined as  $D_\mu = \partial_\mu + i g_3 T^A A^A_\mu + i g_2  t^I W^I_\mu + i g_1 y B_\mu$, where $T^A$ are the $\rm SU_c(3)$ generators, $t^I=\tau^I/2$ are the $\rm SU_L(2)$ generators, and $y$ is the $\rm U_Y(1)$ hypercharge. The fields $\{q,l \}$ are left handed and the fields $\{e,u,d\}$ are right handed. The definition $\sigma_{\mu \, \nu} = i \, [\gamma_\mu,\gamma_\nu]/2$ is used. The subscripts $p,r,s$ and $t$ are flavour indices.
 
-For the $pp\to t \bar{t} H$ production mode differences are observed for the \ctG\ operator. These differences are acknowledged by the authors of the models and reside in the absence of five-point interactions and higher in the \SMEFTsim\ model. It will be corrected in future versions of the model.
+
 
 For the $\mathcal{O}_{uW}$ and $\mathcal{O}_{uB}$ operators defined as,
 
@@ -248,22 +254,22 @@ $$
     \label{tab:higgseft:comptth2}
 \end{table}
 \end{center}
-The prediction for the operators shown in Table~\ref{tab:higgseft:comptth2} agree in their absolute value but not in their sign. The way in which they are implemented in the model is also different. While in \SMEFTsim\ the absolute value and the phase of these complex operators can be changed by the user, only the real part can be tuned by the user in \SMEFTatNLO.
+The prediction for the operators shown in Table~\ref{tab:higgseft:comptth2} agree in their absolute value within the statistical uncertainty but not in their sign. The way in which they are implemented in the model is also different. While in \SMEFTsim\ the absolute value and the phase of these complex operators can be changed by the user, only the real part can be tuned by the user in \SMEFTatNLO.
 
-Other differences come from two-fermion operators involving quarks. In \SMEFTsim\ the couplings of all quarks enter equally, while in \SMEFTatNLO\ the top vertices are parameterised separately. 
+Other differences come from two-fermion operators involving quarks. In \SMEFTsim\ the couplings of all quarks are parametrized together in the same way, while in \SMEFTatNLO\ the top vertices are parameterised separately. 
 
 
 \subsection{$gg\to Z(l^{+}l^{-})H$}
 \label{sec:higgseft:ggzh}
-The study of  $gg\to Z(l^{+}l^{-})H$ with $l=e,\mu$ is performed using the \SMEFTatNLO\ model. The renormalisation scale is set to $M_H=125$~GeV and the PDF set NNPDF2.3 for the parametrisation of the proton structure is used. The SM cross-section obtained for this process with the mentioned settings is 3.147$\pm$0.002 fb, for which the error only reflects the statistical uncertainty of the calculation. The generated events are passed through the \Pythia\ parton shower. A more in depth study of the SMEFT effects for this process was performed in~\cite{Bylund:2016phk} using the main set of operators affecting the cross sections using a sample of NLO accuracy for $gg\to ZH$ and $gg\to ZHj$. Here we have considered all the operators available at NLO in \SMEFTatNLO\ which provide diagrams with a non-zero interference with the SM.
+The study of  $gg\to Z(l^{+}l^{-})H$ with $l=e,\mu$ is performed using the \SMEFTatNLO\ model. The renormalisation scale is set to $M_H=125$~GeV and the PDF set NNPDF2.3 for the parametrisation of the proton structure is used. The SM cross-section obtained for this process with the mentioned settings is 3.147$\pm$0.002 fb, for which the error only reflects the statistical uncertainty of the calculation. The generated events are passed through the \Pythia\ parton shower. A more in-depth study of the SMEFT effects for this process was performed in~\cite{Bylund:2016phk} using the main set of operators affecting the cross sections using a sample of NLO accuracy for $gg\to ZH$ and $gg\to ZHj$. Here we have considered all the operators available at NLO in \SMEFTatNLO\ which provide diagrams with a non-zero interference with the SM.
 
 In Figure~\ref{fig:higgseft:ggzh}, differential distributions as functions of $p_{T}^{V}$ and $m_{HV}$  with BSM effects caused by \cpqi\ , \cpu\ , \ctG\ and \ctp\ are shown.  Many other operators modify the cross section of this process but only some examples of those that distort significantly the shape of the SM prediction for  $c_i=1$ are shown.
 
 \begin{figure}
 \includegraphics[width=0.49\linewidth,page=7]{figures/kinematics_ggHll_np0.pdf}
 \includegraphics[width=0.49\linewidth,page=10]{figures/kinematics_ggHll_np0.pdf}
+\caption{Differential distributions as a function of $p_{T}^{V}$ and $m_{HV}$ for the SM predictions and its interference with operators with Wilson coefficients \ctG\ , \cpd\ , \cpu\ and \ctp\  at the lowest order in QCD. The value of $\Lambda$ was set to 1 TeV. The distribution was obtained using 150000 events.}
 \label{fig:higgseft:ggzh}
-\caption{Differential distributions as a function of $p_{T}^{V}$ and $m_{HV}$ for the SM predictions and its interference with operators with Wilson coefficients \ctG\ , \cpd\ , \cpu\ and \ctp\  at the lowest order in QCD. The value of $\Lambda$ was set to 1 TeV}  
 \end{figure}
 
 In addition to differential cross sections, measurements  of the Higgs couplings in terms of Simplified Template Cross Sections (STXS)~\cite{deFlorian:2016spz} also provide constraining power of the SMEFT parameters. A parametrisation in bins of the STXS in stage 1.2~\cite{Berger:2019wnu}  for $gg\to Z(l^{+}l^{-})H$  is provided in Table~\ref{tab:higgseft:stxsggzh}. The results of	the SM cross section in each bin are shown for two reasons: It allows to recompute the parametrisation in merged scenarios and shows the statistical uncertainty that affects the computation of the parametrisation.
@@ -295,24 +301,24 @@ In addition to differential cross sections, measurements  of the Higgs couplings
  \bottomrule
 \end{tabular}
 }
-
-\caption{Parametrisation of the $gg\to Z(l^{+}l^{-})H$ bins of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model. The numbers are rounded according to their statistical uncertainty.}
+ \caption{Parametrisation of the $gg\to Z(l^{+}l^{-})H$ bins of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model. The numbers are rounded according to their statistical uncertainty.}
+ \label{tab:higgseft:stxsggzh}
 \end{table}
 
-The potential uncertainties arising from the use of a different PDF, scales or any other different settings in the calculation was not carefully investigated. As a quick cross check, the parametrisation was re-derive using a different scale, namely $m_H/2$. The results are typically consistent within the statistical uncertainty. In a few cases, in which the statistical uncertainty does not cover the differences, they differ by at most 5\%.
+The potential uncertainties arising from the use of a different PDF, scales or any other different settings in the calculation are not carefully investigated. As a quick cross check, the parametrisation was re-derive using a different scale, namely $m_H/2$. The results are typically consistent within the statistical uncertainty. In a few cases, in which the statistical uncertainty does not cover the differences, they differ by at most 5\%.
 
 \subsection{$gg\to H$}
 \label{sec:higgseft:section3}
 The SMEFT effects in the Higgs production through gluon-gluon fusion is examined using the \SMEFTatNLO\ package. As in Section~\ref{sec:higgseft:ggzh}, the 
 study of this process is already available in the literature~\cite{Deutschmann:2017qum} for a limited set of operators. In this work we have considered all operators that have a non-zero interference with the SM. Those operators were found to be:
 $\mathcal{O}_{\psi G}$, $\mathcal{O}_{tG}$, $\mathcal{O}_{t\psi}$, $\mathcal{O}_{d\psi}$, $\mathcal{O}_{\psi DC}$, $\mathcal{O}_{\psi l1}^{(3)}$, $\mathcal{O}_{ \psi l2}^{(3)}$ and $\mathcal{O}_{ll}$.
-The last five operators enters in the process though shifts to the inputs parameters or the Higgs field redefinition and do not modify the shape of the SM prediction.
+The last five operators enter in the process though shifts to the inputs parameters or the Higgs field redefinition and do not modify the shape of the SM prediction.
 
-The predictions for the Higgs production in gluon-gluon fusion is obtained using $m_H/2$ as the renormalisation scale and the PDF4LHC15 PDF set. A cut of 20 GeV is applied by default to the transverse momentum of the parton at matrix element level. Given the difficulty of generating the interference terms between the loop-induced SM diagrams and the tree-level diagrams appearing when the \cpG\ operator is used in \Madgraph, the process is generated in three samples with different jet multiplicity, namely 0, 1 and 2 additional jets. The cross sections of the processes are
+The predictions for the Higgs production in gluon-gluon fusion is obtained using $m_H/2$ as the renormalisation scale and the PDF4LHC15 PDF set. A cut of 20 GeV is applied by default to the transverse momentum of the parton at matrix-element level. Because \Madgraph\ cannot deal with the interference between loop-induced and tree-level processes, when the \cpG\ operator is considered, the reweighting module is used and the process is generated in three samples with different jet multiplicity, namely 0, 1 and 2 additional jets. The cross sections of the processes are
 $14.082 \pm 0.003$~pb, $10.74\pm0.002$~pb and $5.598\pm0.008$~pb respectively for the 0, 1 and 2 additional jets cases. Additional multi-leg samples are produced for the SM and for all operators except for \cpG\  and used to cross check the results. These samples are merged with the CKKW-L~\cite{Lonnblad:2001iq} scheme using $30$~GeV as the merging scale.
 
 
-The differential distributions for the SM and the interference with the operators with Wilson coefficients \cpG ,\ctG\ and \ctp\ is shown in Figure~\ref{fig:higgseft:ggh}. The value of the Wilson coefficients were set to unity and $\Lambda=1$~TeV is used. The distributions are normalised to unity so that only the shape differences induced by the different operators is displayed in the figure. Different statistics is used for the two subfigures, while the left-hand-side one was made using 400000 events, the right-hand-side one only has 50000.
+The differential distributions for the SM and the interference with the operators with Wilson coefficients \cpG ,\ctG\ and \ctp\ is shown in Figure~\ref{fig:higgseft:ggh}. The value of the Wilson coefficients is set to unity and $\Lambda=1$~TeV is used. The distributions are normalised to unity so that only the shape differences induced by the different operators are displayed in the figure.
 
 
 
@@ -320,13 +326,14 @@ The differential distributions for the SM and the interference with the operator
 \includegraphics[width=0.49\linewidth,page=5]{figures/kinematics_gghj_more.pdf}
 \includegraphics[width=0.49\linewidth,page=5]{figures/kinematics_gghjj.pdf}
 
+\caption{Differential distributions normalised to unity as a function of $p_{T}^{H}$ for the SM prediction and its interference with operators with Wilson coefficients \cpG\ ,\ctG\ and \ctp\ for $p p \to H + j$ (left) and $p p \to H + j + j$ (right). The value of $\Lambda$ was set to 1 TeV. The left-hand-side (right-hand side) distribution is obtained using 400000 (50000) events.}
 \label{fig:higgseft:ggh}
-\caption{Differential distributions normalised to unity as a function of $p_{T}^{H}$ for the SM prediction and its interference with operators with Wilson coefficients \cpG\ ,\ctG\ and \ctp\ for $p p \to H + j$ (left) and $p p \to H + j + j$ (right). The value of $\Lambda$ was set to 1 TeV.}
+
 \end{figure}
   
   
 
- In Table~\ref{tab:higgseft:stxsggh1}, we provide the parametrisation of the $gg\to H$ STXS bins in stage 1.2. For reference and to give the needed inputs to obtain the parametrisation in other scenarios in which several STXS bins are merged, the SM cross section in each bin is provided. The results provided are cross-checked with the produced multi-leg samples. 
+ In Tables~\ref{tab:higgseft:stxsggh1} and \ref{tab:higgseft:stxsggh2}, we provide the parametrisation of the $gg\to H$ STXS bins in stage 1.2. For reference and to give the needed inputs to obtain the parametrisation in other scenarios in which several STXS bins are merged, the SM cross section in each bin is provided. The results provided are cross-checked with the produced multi-leg samples. 
 
  
  
@@ -370,8 +377,8 @@ The differential distributions for the SM and the interference with the operator
 \end{tabular}
 }
 
-\caption{ of the $gg\to H$ bins with no jet, 0-jet and 1-jet selection of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model. The numbers are rounded according to their statistical uncertainty.}
-\label{tag:higgseft:stxsggh1}
+\caption{Parametrisation of the $gg\to H$ bins with no jet, 0-jet and 1-jet selection of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model. The numbers are rounded according to their statistical uncertainty.}
+\label{tab:higgseft:stxsggh1}
 \end{table}
 
 
@@ -384,7 +391,7 @@ The differential distributions for the SM and the interference with the operator
 
 
       \hline
-      \textbf{Bin} & Parametrisation& SM cross-section [pb]\ \\
+      \textbf{Bin} & Parametrisation & SM cross-section [pb]\ \\
       \hline
       $gg\to H$ ($\geq$ 2-jet, $m_{\textrm jj}<350$~GeV, $p_{\textrm T}^{H}<60$~GeV)&
       1.62 \ctG -0.061 \ctpl1 -0.061 \ctpl2 +0.126 \cdp -0.031 \cpDC -0.122 \ctp +41 \cpG  + 0.061 \cll &0.66 $\pm$ 0.01\\
@@ -414,12 +421,12 @@ The differential distributions for the SM and the interference with the operator
 }
 
 \caption{Parametrisation of the $gg\to H$ bins with 2 or more jets selection  of the STXS as defined in its stage 1.2 with the parameters definitions of the \SMEFTatNLO\ model. The numbers are rounded according to their statistical uncertainty.}
-\label{tag:higgseft:stxsggh2}
+\label{tab:higgseft:stxsggh2}
 \end{table}
 
         
 The parametrisation of \cpG\ for the $gg\to H$ production mode is different in the \SMEFTsim\ and \SMEFTatNLO\ for 1-jet and 2-jet . It has been checked that for the 0-jet case the values of the inclusive cross section in those models is the same and the differential distributions as a function of $p_{\textrm T}^{ \textrm H}$ are consistent within statistical uncertainty as shown in Figure~\ref{fig:higgseft:ggHcomp}. In this case, also the same SMEFT effects for \cpG\ are observed.
-However, when we add jets to the final state, the parametrisation changes significantly (it can be compared to the one shown in~\cite{ATL-PHYS-PUB-2019-042}). This is expected due to the different implementation of the process and different diagrams included. Additionally, this process also lacks of 5- and 6-point interacations in \SMEFTsim\ which are not included in the current public version and will be added in the next versions of \SMEFTsim. In Figure~\ref{fig:higgseft:diagram} is depicted an example diagram which is included in \SMEFTatNLO\ and not considered in \SMEFTsim.
+However, when we add jets to the final state, the parametrisation changes significantly (it can be compared to the one shown in~\cite{ATL-PHYS-PUB-2019-042}). This is expected due to the different implementation of the process and different diagrams included. Additionally, this process also lacks 5- and 6-point interactions in \SMEFTsim\ which go beyond the LO truncation and are not included in the current public version. They will be added in the next versions of \SMEFTsim. In Figure~\ref{fig:higgseft:ggHcomp} an example diagram which is included in \SMEFTatNLO\ and not considered in \SMEFTsim\ is depicted.
 
 \begin{figure}
   
@@ -448,21 +455,22 @@ However, when we add jets to the final state, the parametrisation changes signif
 
     \end{tikzpicture}    
     \caption{ Left: Comparison of the differential cross section of  $gg\to H$ as a function of $p_{\textrm T}^{ \textrm H}$ in \SMEFTsim\ and \SMEFTatNLO. Right: Example diagram contributing to $gg\to H +j$ which is not considered in \SMEFTsim\ but it is implemented in \SMEFTatNLO.}
-    \label{fig:higgseft:diagram}
+    \label{fig:higgseft:ggHcomp}
 \end{figure}
 
 \subsection{Summary and conclusions}
-In the absence of hints for new physics in the LHC, the SMEFT approach started to be widely adopted by the experimental collaborations for the interpretation of their measurements. In order to be able to have predictions for the SMEFT, implementation of the SM plus dimension-6 Lagrangian in form of UFO files that can be interfaced with modern event generators are needed. Two different tools: \SMEFTsim\ and \SMEFTatNLO\ have been used and compare to study the $gg\to H$ and $gg\to ZH$ loop-induced processes. For the former, which is mainly meant for performing LO calculations, the $gg\to ZH$ process cannot be simulated and only one-loop functions for $gg\to H$ are implemented.
+In the absence of hints for new physics in the LHC, the SMEFT approach started to be widely adopted by the experimental collaborations for the interpretation of their measurements. In order to be able to have predictions for the SMEFT, implementation of the SM plus dimension-6 Lagrangian in the form of UFO files that can be interfaced with modern event generators is needed. Two different tools, \SMEFTsim\ and \SMEFTatNLO, have been used.
+%and compare to study the $gg\to H$ and $gg\to ZH$ loop-induced processes. For the former, which is mainly meant for performing LO calculations, the $gg\to ZH$ process cannot be simulated and only one-loop functions for $gg\to H$ are implemented.
 %It lacks, for example, of $gg\to Hg$ one loop-function exists making the calculation of Higgs plus jets unreliable. It also truncates the Lagrangian for contributions that have a loop suppression on top of the $\Lambda^{-2}$.
 
-In this work we have compared both tools for the $pp\to t\bar{t}H$ and $pp\to ZH$ production processes. The agreement between the predictions for the SM and interference terms is excellent except for the $\mathcal{O}_{\textrm tG}$ operator. Some other operators like $\mathcal{O}_{\textrm tW}$, $\mathcal{O}_{\textrm tZ}$, or two-fermion currents involving quarks cannot be directly compared. Even if the definition of each operator is available in both models, it would be helpful for the user to to have a clear mapping operators in the different tools.
+In this work, we have compared both tools for the $pp\to t\bar{t}H$ and $pp\to ZH$ production processes. The agreement between the predictions for the SM and interference terms is excellent except for the $\mathcal{O}_{\textrm tG}$ operator. Some other operators like $\mathcal{O}_{\textrm tW}$, $\mathcal{O}_{\textrm tZ}$, or two-fermion currents involving quarks cannot be directly compared. Even if the definition of each operator is available in both models, it would be helpful for the user to have a clear mapping between operators in the different tools.
 
 The SMEFT effects have been studied by means of the distortion of the SM prediction shape and normalisation in differential cross sections as well as the parametrisation of STXS bins. Only the interference effects have been investigated. For $gg\to H$, the operators \cpG\ and \ctG\ have a different effect compared with the SM when different scales are proven, increasing at higher energies.
-The parametrisation in terms of STXS bins for $\mathcal{O}_{\psi G}$ differs from others that can be found in the literature using \SMEFTsim\ due to the differences in the implementation of this process in both tools. The \SMEFTatNLO\ tool is the only one that provides reliable description of the Higgs plus jets production in gluon-gluon fusion.
+The parametrisation in terms of STXS bins for $\mathcal{O}_{\psi G}$ differs from others that can be found in the literature using \SMEFTsim\ due to the differences in the implementation of this process in both tools. The \SMEFTatNLO\ tool provides a reliable description of the Higgs plus jets production in gluon-gluon fusion.
 
 For $gg\to ZH$, with $Z\to l^{+}l^{-}$,  many operators change the cross sections. However, most of them just introduce a deviation in the normalisation of the SM predictions at the interference level without distorting the SM shape. Among the ones that have an energy dependence we can find: $\mathcal{O}_{tG}$, $\mathcal{O}_{t\psi}$ or $\mathcal{O}_{\psi q_i}^{(3)}$ 
 
-The NLO effects on the decays have not been studied here. This work could have been extended with studies of $H\to \gamma\gamma$ and $ H\to Z\gamma$. They exist in the literature~\cite{Dawson:2018liq,Dedes:2018seb} for $H\to \gamma\gamma$. However, none of the tools are able to provide the NLO QED corrections for these processes in the SMEFT.
+%The NLO effects on the decays have not been studied here. This work could have been extended with studies of $H\to \gamma\gamma$ and $ H\to Z\gamma$. They exist in the literature~\cite{Dawson:2018liq,Dedes:2018seb} for $H\to \gamma\gamma$. However, none of the tools are able to provide the NLO QED corrections for these processes in the SMEFT.
 
 
 
